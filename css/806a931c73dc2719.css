@@ -1,0 +1,10 @@
+@custom-media --pointer-fine (pointer: fine);
+@custom-media --tablet-up (min-width: 1024px);
+@custom-media --tablet-down (max-width: 1024px);
+@custom-media --phone-up (min-width: 440px);
+@custom-media --phone-down (max-width: 440px);
+
+.TransitionHeight-module-scss-module__KEdKMW__container {
+    height: 0;
+    overflow: hidden
+}
