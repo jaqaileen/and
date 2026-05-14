@@ -160,6 +160,24 @@
     }
 }
 
+@media (min-width: 440px) and (max-width: 1024px) {
+    .HomeLanding-module-scss-module__LwAsna__introduction {
+        padding-top: 180px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .HomeLanding-module-scss-module__LwAsna__content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .SanityContentLabelLink-module-scss-module__25iyra__container {
+        grid-template-columns: 140px 1fr;
+        white-space: normal;
+    }
+}
+
 .HomeLanding-module-scss-module__LwAsna__decorator {
     border-top: 1px solid var(--light-grey);
     padding-bottom: 20px

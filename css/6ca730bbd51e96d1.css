@@ -342,7 +342,7 @@
 }
 
 .contact-link-item__key {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--red);
     transition: color 0.2s ease;
 }
