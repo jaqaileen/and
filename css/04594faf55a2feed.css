@@ -142,7 +142,7 @@
 
 @media (pointer:fine) {
     .HomeLanding-module-scss-module__LwAsna__introduction a:hover {
-        color: var(--grey)
+        color: var(--pink);
     }
 }
 
@@ -157,24 +157,6 @@
     .HomeLanding-module-scss-module__LwAsna__introduction {
         padding-top: 260px;
         padding-bottom: 16px
-    }
-}
-
-@media (min-width: 440px) and (max-width: 1024px) {
-    .HomeLanding-module-scss-module__LwAsna__introduction {
-        padding-top: 180px;
-        padding-bottom: 40px;
-        flex-wrap: wrap;
-    }
-
-    .HomeLanding-module-scss-module__LwAsna__content {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .SanityContentLabelLink-module-scss-module__25iyra__container {
-        grid-template-columns: 140px 1fr;
-        white-space: normal;
     }
 }
 
