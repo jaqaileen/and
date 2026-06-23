@@ -15,35 +15,76 @@
     <link rel="stylesheet" href="./css/6ca730bbd51e96d1.css" data-precedence="next">
     <link rel="preload" as="script" fetchpriority="low"
         href="/_next/static/chunks/5bcee453cc4bce6d.js?dpl=dpl_FYpNEHf9pi5UFVvj9kogmMbn2Bia">
-    <script src="./js/dde2c8e6322d1671.js" async=""></script>
-    <script src="./js/27404890e902a071.js" async=""></script>
-    <script src="./js/turbopack-7f84df0d8ccb15db.js" async=""></script>
-    <script src="./js/ff1a16fafef87110.js" async=""></script>
-    <script src="./js/d2be314c3ece3fbe.js" async=""></script>
-    <script src="./js/5c01a8ad9d506c66.js" async=""></script>
-    <script src="./js/cfc0171062b6c267.js" async=""></script>
-    <script src="./js/1557aecbe3a66f04.js" async=""></script>
-    <script src="./js/aea17704dd699bb4.js" async=""></script>
-    <script src="./js/8c3f6229f338551a.js" async=""></script>
-    <script src="./js/04217982fe4acc6a.js" async=""></script>
-    <script src="./js/603fe2ec21c1f660.js" async=""></script>
+    <script src="./script.js" async=""></script>
+    <canvas id="cursor-trail-canvas"
+        style="position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:9999;"></canvas>
+
+        <link rel="icon" type="image/png" href="./images/pomegranate.png">
 
     <title>JAQ AILEEN</title>
 </head>
 
 <body>
+    <div id="cursor-dot"></div>
     <div hidden=""><!--$--><!--/$--></div>
     <div class="LayoutDefault-module-scss-module__0-pwYa__container">
         <header class="HeaderLayout-module-scss-module__x_kloq__container">
-            <div class="HeaderLayout-module-scss-module__x_kloq__inner HeaderLayout-module-scss-module__x_kloq__ACTIVE">
-                <div class="HeaderLayout-module-scss-module__x_kloq__logo"><a class="common-link"
-                        href="./index.html"><span>JAQ
-                            AILEEN</span></a></div>
+            <div class="HeaderLayout-module-scss-module__x_kloq__logo">
+                <a class="common-link" href="./index.html">
+                    <!-- <img src="./images/pomegranate.png" alt="" style="height: 1em; width: auto; object-fit: contain; display: inline-block; vertical-align: middle; margin-right: 0.2em;"> -->
+                    <span>JAQ AILEEN</span>
+                </a>
             </div>
-            </nav>
+            <!-- <nav class="HeaderLayout-module-scss-module__x_kloq__menu"><a
+                    class="common-link HeaderLayout-module-scss-module__x_kloq__button"
+                    href="./projects2.html"><span>CLIENT WORK</span></a>
+                <div
+                    class="HeaderLayout-module-scss-module__x_kloq__submenu TransitionHeight-module-scss-module__KEdKMW__container">
+                    <a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                        href="./projects2.html"><span>All</span></a>
+                    <div class="HeaderLayout-module-scss-module__x_kloq__links"><a
+                            class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="./bodiesofwater1.html"><span>HERMÈS (SPRING)
+                                <br>Visual Merchandising, 2026<div
+                                    class="HeaderLayout-module-scss-module__x_kloq__thumbnail">
+                                    <img src="./images/hermes-wstwindow.jpg" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div></span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="./bodiesofwater2.html"><span>HERMÈS (SUMMER)
+                                <br>Visual Merchandising, 2026<div
+                                    class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
+                                        src="./images/cubes-cover.jpg" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div></span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="./theweaving.html"><span>MEVIUS<br> Branding, 2025
+                                <div class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
+                                        src="./images/mevius-logounbranded.png" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div>
+                            </span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="/"><span>MILKLKIFE<br> Package Design, 2025<div
+                                    class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
+                                        src="./images/milklife-packaging.png" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div></span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="./bumi1.html"><span>PROENZA SCHOULER
+                                <br>Online Visual Merchandising, 2025<div
+                                    class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
+                                        src="./images/bumi-logo.jpg" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div></span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
+                            href="./bumi2.html"><span>HERMÈS (FALL)<br>Visual Merchandising, 2023<div
+                                    class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
+                                        src="./images/bumi-home.jpg" alt="" width="1601" height="2400"
+                                        class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
+                                </div>
+                            </span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__more"
+                            href="./projects.html"><span>View All</span></a></div>
+                </div>
+            </nav> -->
             <nav class="HeaderLayout-module-scss-module__x_kloq__menu"><a
                     class="common-link HeaderLayout-module-scss-module__x_kloq__button"
-                    href="./projects.html"><span>Projects</span></a>
+                    href="./projects.html"><span>PERSONAL WORK</span></a>
                 <div
                     class="HeaderLayout-module-scss-module__x_kloq__submenu TransitionHeight-module-scss-module__KEdKMW__container">
                     <a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
@@ -66,7 +107,7 @@
                                         class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
                                 </div>
                             </span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
-                            href="/"><span>THE SHAPE OF WATER <br> Artist Book, 2025<div
+                            href="./theshapeof.html"><span>THE SHAPE OF WATER <br> Artist Book, 2025<div
                                     class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
                                         src="./images/shapeof-cover.jpg" alt="" width="1601" height="2400"
                                         class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
@@ -82,7 +123,7 @@
                                         src="./images/bumi-home.jpg" alt="" width="1601" height="2400"
                                         class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
                                 </div></span></a><a class="common-link HeaderLayout-module-scss-module__x_kloq__link"
-                            href="./alacart.html"><span>A La Cart <br>Artist Book, 2024
+                            href="./alacart.html"><span>A LA CART<br>Artist Book, 2024
                                 <div class="HeaderLayout-module-scss-module__x_kloq__thumbnail"><img
                                         src="./images/alacart-cover.jpg" alt="" width="1601" height="2400"
                                         class="CommonImage-module-scss-module__qaK7rG__image" style="aspect-ratio:1">
@@ -93,15 +134,7 @@
             </nav>
             <nav class="HeaderLayout-module-scss-module__x_kloq__menu"><a
                     class="common-link HeaderLayout-module-scss-module__x_kloq__button"
-                    href="./about.html"><span>About</span></a>
-                <div
-                    class="HeaderLayout-module-scss-module__x_kloq__submenu HeaderLayout-module-scss-module__x_kloq__submenuMenu TransitionHeight-module-scss-module__KEdKMW__container">
-                    <div class="HeaderLayout-module-scss-module__x_kloq__links"><a
-                            class="common-link HeaderLayout-module-scss-module__x_kloq__link"
-                            href="./about.html"><span>Contact</span></a><a
-                            class="common-link HeaderLayout-module-scss-module__x_kloq__link"
-                            href="./about.html"><span>About</span></a></div>
-                </div>
+                    href="./about.html"><span>ABOUT</span></a>
             </nav>
     </div>
     </header>
@@ -462,35 +495,51 @@
             <footer class="FooterLayout-module-scss-module__Xbw8wq__container">
                 <div class="FooterLayout-module-scss-module__Xbw8wq__decorator">
                     <div class="FooterLayout-module-scss-module__Xbw8wq__inner">
-                        <div class="contact-links" id="Contact">
-                            <a href="mailto:jaqaileen@gmail.com" class="contact-link-item common-link">
-                                <span class="contact-link-item__key">Email: jaqaileen@gmail.com ↗</span>
-                            </a>
-                            <a href="https://instagram.com/jaqaileen" target="_blank" rel="noopener noreferrer"
-                                class="contact-link-item common-link">
-                                <span class="contact-link-item__key">Instagram: @jaqaileen ↗</span>
-                            </a>
-                            <a href="https://instagram.com/jaqaileen" target="_blank" rel="noopener noreferrer"
-                                class="contact-link-item common-link">
-                                <span class="contact-link-item__key">LinkedIn: @jaqaileen ↗</span>
-                            </a>
-                            <a href="#" class="contact-link-item common-link">
-                                <span class="contact-link-item__key">Resume: Download PDF ↓</span>
-                            </a>
-                            <a href="#" class="contact-link-item common-link">
-                                <span class="contact-link-item__key">Portfolio: Download PDF ↓</span>
-                            </a>
-                            <a href="#" class="contact-link-item common-link">
-                                <span class="contact-link-item__key">Based In: New York, NY</span>
-                            </a>
+                        <div class="HomeLanding-module-scss-module__LwAsna__introduction">
+                            <div class="with-fancy">
+                                <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                    <div>Email</div><span class="sanity-link__container"><a href="mailto:sjaqaileen@gmail.com"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="common-link sanity-link"><span>jaqaileen@gmail.com
+                                                ↗</span></a></span>
+                                </div>
+                                <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                    <div>Instagram</div><span class="sanity-link__container"><a
+                                            href="https://instagram.com/jaqaileen" target="_blank" rel="noopener noreferrer"
+                                            class="common-link sanity-link"><span>@jaqaileen
+                                                ↗</span></a></span>
+                                </div>
+                                <br>
+                                <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                    <div>Currently at</div><span class="sanity-link__container"><a
+                                            href="https://instagram.com/jaqaileen" target="_blank" rel="noopener noreferrer"
+                                            class="common-link sanity-link"><span>Hermés
+                                                ↗</span></a></span>
+                                    <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                        <div>Based in</div><span class="sanity-link__container"><a rel="noopener noreferrer"
+                                                <span>New
+                                                    York, NY</span></a></span>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                    <div>Resume</div><span class="sanity-link__container"><a
+                                            href="https://instagram.com/jaqaileen" target="_blank" rel="noopener noreferrer"
+                                            class="common-link sanity-link"><span>Download PDF ↓</span></a></span>
+                                    <div class="SanityContentLabelLink-module-scss-module__25iyra__container">
+                                        <div>Portfolio</div><span class="sanity-link__container"><a rel="noopener noreferrer"
+                                                class="common-link sanity-link"><span>Download PDF ↓</span></a></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="FooterLayout-module-scss-module__Xbw8wq__bottom">
                     <div class="FooterLayout-module-scss-module__Xbw8wq__copyright2">©<!-- -->2026<!-- --> Jaq Aileen.
                         All Rights Reserved.</div>
-                    <div class="FooterLayout-module-scss-module__Xbw8wq__credits"><a target="_blank"
-                            rel="noopener noreferrer" class="common-link"><span>Designed and Coded By
+                    <div class="FooterLayout-module-scss-module__Xbw8wq__credits"><a target="_blank" rel="noopener noreferrer"
+                            class="common-link"><span>Designed and Coded By
                                 Jaq Aileen</span></a> 
                     </div>
                 </div>
