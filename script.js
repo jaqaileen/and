@@ -2,16 +2,16 @@
 const mobileImages = [
     './images/install-detail-p.jpg',
     './images/cubes-cover.jpg',
-    './images/shapeof-cover.jpg',
+    './images/shapeof-cover2.png',
+    './images/alacart-cover.png',
     './images/theweaving-open.jpg',
-    './images/bumi-cover.jpg',
-    './images/alacart-cover.jpg',
+    './images/bumi-cover-m.png',
 ];
 
 const desktopImages = [
     './images/install-detail-h.jpg',
     './images/cubes-cover.jpg',
-    './images/shapeof-cover.jpg',
+    './images/shapeof-cover2.png',
     './images/theweaving-open.jpg',
     './images/bumi-identityspread.jpg',
     './images/alacart-diecut.jpg',
@@ -34,8 +34,8 @@ if (mobileImg && desktopImg) {
     }, 2100);
 }
 
-        // ── Cursor trail ────────────────────────────────────────────────────
-        (function () {
+        // ── Cursor trail (desktop only) ─────────────────────────────────────
+        if (window.innerWidth > 1024) (function () {
             const seedImages = [
                 './images/seed1.png',
                 './images/seed2.png',
@@ -100,15 +100,17 @@ if (mobileImg && desktopImg) {
                     this.x = x;
                     this.y = y;
                     this.img = seedImgEls[Math.floor(Math.random() * seedImgEls.length)];
-                    this.size = 12 + Math.random() * 12;   // smaller: 8–16px
-                    this.vx = (Math.random() - 0.5) * 1.2;
-                    this.vy = -0.4 - Math.random() * 0.8;
+                    this.size = 10 + Math.random() * 10;
+                    this.vx = (Math.random() - 0.5) * 0.8;
+                    this.vy = -0.6 - Math.random() * 0.6;
+                    this.gravity = 0.018;
                     this.rotation = Math.random() * Math.PI * 2;
-                    this.rotationSpeed = (Math.random() - 0.5) * 0.08;
+                    this.rotationSpeed = (Math.random() - 0.5) * 0.05;
                     this.life = 0;
-                    this.maxLife = 40 + Math.random() * 50;
+                    this.maxLife = 55 + Math.random() * 40;
                 }
                 update() {
+                    this.vy += this.gravity;
                     this.x += this.vx;
                     this.y += this.vy;
                     this.rotation += this.rotationSpeed;
@@ -116,9 +118,11 @@ if (mobileImg && desktopImg) {
                 }
                 draw() {
                     if (!this.img.complete) return;
-                    const alpha = 1 - (this.life / this.maxLife);
+                    const t = this.life / this.maxLife;
+                    // ease-in fade: hold opacity longer, then soften out
+                    const alpha = t < 0.6 ? 1 - t * 0.3 : (1 - t) / 0.4 * 0.82;
                     ctx.save();
-                    ctx.globalAlpha = alpha;
+                    ctx.globalAlpha = Math.max(0, alpha);
                     ctx.translate(this.x, this.y);
                     ctx.rotate(this.rotation);
                     ctx.drawImage(this.img, -this.size / 2, -this.size / 2, this.size, this.size);
@@ -127,14 +131,22 @@ if (mobileImg && desktopImg) {
             }
 
             document.addEventListener('mousemove', (e) => {
+                const prevX = lastX === -999 ? e.clientX : lastX;
+                const prevY = lastY === -999 ? e.clientY : lastY;
                 mouse.x = e.clientX;
                 mouse.y = e.clientY;
 
-                const dx = mouse.x - lastX, dy = mouse.y - lastY;
-                spawnAccum += Math.sqrt(dx * dx + dy * dy);
-                while (spawnAccum > 12) {
-                    particles.push(new Particle(mouse.x, mouse.y));
-                    spawnAccum -= 12;
+                const dx = mouse.x - prevX, dy = mouse.y - prevY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                spawnAccum += dist;
+
+                // Interpolate spawn positions along the mouse path for even spacing
+                let spawned = 0;
+                while (spawnAccum > 14) {
+                    const t = dist > 0 ? Math.min((spawned * 14) / dist, 1) : 1;
+                    particles.push(new Particle(prevX + dx * t, prevY + dy * t));
+                    spawnAccum -= 14;
+                    spawned++;
                 }
                 lastX = mouse.x;
                 lastY = mouse.y;

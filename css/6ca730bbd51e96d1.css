@@ -125,7 +125,13 @@
 
 .ProjectRelated-module-scss-module__oVuQQq__container h2 {
     display: block;
-    padding-left: 112px;
+    padding-bottom: 8px;
+}
+
+@media (max-width: 1023px) {
+    .ProjectRelated-module-scss-module__oVuQQq__container {
+        padding-bottom: 12px;
+    }
 }
 
 .hero {

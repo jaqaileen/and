@@ -303,6 +303,17 @@ body ::selection {
     .HeaderLayout-module-scss-module__x_kloq__thumbnail {
         display: none;
     }
+
+    /* Reduce nav container padding on mobile */
+    .HeaderLayout-module-scss-module__x_kloq__container {
+        padding: 6px;
+        padding-top: 10px;
+    }
+
+    /* Remove padding-left from submenu links on mobile */
+    .HeaderLayout-module-scss-module__x_kloq__submenu .HeaderLayout-module-scss-module__x_kloq__links {
+        padding-left: 0 !important;
+    }
 }
 
 
