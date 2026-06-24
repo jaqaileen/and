@@ -1767,7 +1767,7 @@
         flex-direction: column;
         height: auto;
         gap: 12px;
-        padding: 12px;
+        padding: 40px 12px;
         align-items: stretch;
     }
 
