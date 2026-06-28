@@ -2,7 +2,7 @@
 const mobileImages = [
     './images/install-detail-p.jpg',
     './images/cubes-cover.jpg',
-    './images/shapeof-cover2.png',
+    './images/shapeof-cover2.jpg',
     './images/alacart-cover.png',
     './images/theweaving-open.jpg',
     './images/bumi-cover-m.png',
@@ -11,7 +11,7 @@ const mobileImages = [
 const desktopImages = [
     './images/install-detail-h.jpg',
     './images/cubes-cover.jpg',
-    './images/shapeof-cover2.png',
+    './images/shapeof-cover2.jpg',
     './images/theweaving-open.jpg',
     './images/bumi-identityspread.jpg',
     './images/alacart-diecut.jpg',
