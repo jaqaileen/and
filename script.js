@@ -1,7 +1,7 @@
 // ── Hero image rotator ──────────────────────────────────────────────
 const mobileImages = [
     './images/install-detail-p.jpg',
-    './images/cubes-cover.jpg',
+    './images/cubes-cover1.jpg',
     './images/shapeof-cover2.jpg',
     './images/alacart-cover.png',
     './images/theweaving-open.jpg',
@@ -10,13 +10,11 @@ const mobileImages = [
 
 const desktopImages = [
     './images/install-detail-h.jpg',
-    './images/cubes-cover.jpg',
+    './images/cubes-cover1.jpg',
     './images/shapeof-cover2.jpg',
     './images/theweaving-open.jpg',
     './images/bumi-identityspread.jpg',
     './images/alacart-diecut.jpg',
-    './images/hermeswstwindow2.jpg',
-    './images/milklife-shelf.png',
 ];
 
 const mobileImg = document.querySelector('.HomeLanding-module-scss-module__LwAsna__MOBILE');
