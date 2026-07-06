@@ -100,7 +100,7 @@ meter {
     --pink: #DD9CAA;
     --black: #8B0000;
     --white: #fff;
-    --off-white: #f7f7f7;
+    --off-white: #edebeb;
     --light-grey: #DD9CAA;
     --foreground: var(--black);
     --background: var(--off-white);
